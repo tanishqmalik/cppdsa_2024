@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "lldb",
+      "request": "launch",
+      "args": [],
+      "cwd": "/Users/tanishqmalik/Library/CloudStorage/GoogleDrive-tanishq.malik31@gmail.com/My Drive/codes clould/cppdsa2024",
+      "program": "/Users/tanishqmalik/Library/CloudStorage/GoogleDrive-tanishq.malik31@gmail.com/My Drive/codes clould/cppdsa2024/build/Debug/outDebug"
+    }
+  ]
+}
