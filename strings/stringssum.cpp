@@ -23,4 +23,31 @@
 
 // }
 
+// wap to find no. of occurence of the char in the string given by user
+
+
+#include <iostream>
+using namespace std;
+
+int main(){
+    string s;
+    getline(cin, s);
+
+    char temp;
+    cin>>temp;
+
+    int count;
+
+
+    for(int i=0; i<s.size(); i++){
+        if(temp == s[i]){
+            count++;
+        }
+    }
+
+    cout << count-1<<endl;
+
+
+}
+
 

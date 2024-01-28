@@ -1,20 +1,18 @@
-#include <iostream> 
-
-
-
+#include <iostream>
 using namespace std;
 int main(){
     string s;
-    getline(cin, s);
+    getline(cin,s);
+    char find;
+    cin>>find;
+    int temp;
 
-    int size = s.size();
+    int size= s.size();
 
     for(int i=0; i<size; i++){
-        if(i==0 || s[i-1]==' '){
-            s[i]=toupper(s[i]);
+        if(find==s[i]){
+            temp=i;
         }
     }
-    for (int i=0; i<size; i++){
-        cout<< s[i]<<endl;
-    }
+    cout << temp<<endl;
 }

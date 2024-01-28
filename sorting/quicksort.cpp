@@ -35,12 +35,6 @@ int partition(int arr[], int s, int e){
     return pivotIndex;
 }
 
-
-// left right vala sambhal lete hai/....
-
-
-
-
 void quickSort(int arr[], int s, int e){
     // base case
     if(s>=e) return;
@@ -74,3 +68,8 @@ int main(){
         cout<< arr[i]<<" ";
     }
 }
+
+// write a program to display the elements of char array,input should be provided by user
+
+
+
