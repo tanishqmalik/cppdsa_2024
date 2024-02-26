@@ -22,21 +22,24 @@
 // }
 
 
-
-
 #include <iostream>
 #include <vector>
-#include <algorithm>
-
 using namespace std;
 
 int main(){
-    vector<int> vec;
-    int num;
+    int n;
+    cin>>n;
 
-    while(cin>>num){
+    vector <int>vec;
+    for(int i=0; i<n; i++){
+        int num;
+        cin>>num;
         vec.push_back(num);
     }
 
-    sort()
+    for(int num:vec){
+        cout<<num<<" ";
+    }
+
+    cout<<endl;
 }
