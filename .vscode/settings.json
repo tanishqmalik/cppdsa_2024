@@ -61,6 +61,7 @@
     "ostream": "cpp",
     "vector": "cpp",
     "__locale": "cpp",
-    "string": "cpp"
+    "string": "cpp",
+    "new": "cpp"
   }
 }

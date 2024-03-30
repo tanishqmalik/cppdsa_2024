@@ -1,23 +1,46 @@
-// push pop size top peek isempty linear data structure  top=-1
 #include <iostream>
-#include <stack>
 using namespace std;
 
-int main(){
-    stack<int> st;
+class Stack{
+    int arr[5];
+    int top;
 
-    st.push(20);
-    st.push(30);
-    st.push(40);
-
-    // Loop until the stack is empty
-    while (!st.empty()) {
-        cout << st.top() << endl;
-        st.pop();
+    public:
+    Stack(){
+        top=-1;
+    }
+    void Push(int x){
+        top++;
+        arr[top]=x;
+    }
+    void Pop(){
+        top--;
+    }
+    void isempty(){
+        if(top==-1){
+            cout<<"empty"<<endl;
+        }
+        else{
+            cout<<"not empty"<<endl;
+        }
     }
 
-    // for(int i=0; i<st.size(); i++){
-    //     cout<<st.top()<<endl;
-    //     st.pop();
-    // }
+
+    int Top(){
+        return arr[top];
+    }
+
+    int Size(){
+        return top+1;
+    }
+};
+
+int main(){
+    Stack s;
+    // s.Push(6);
+    // s.Push(5);
+
+    cout<<s.Size()<<endl;
+
+    s.isempty();
 }

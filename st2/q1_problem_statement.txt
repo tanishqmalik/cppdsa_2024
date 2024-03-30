@@ -1,0 +1,32 @@
+Problem statement:
+
+Given a string str of lowercase letters, a duplicate removal consists of choosing two adjacent and equal letters and removing them. We repeatedly make duplicate removals on str until we no longer can. Print the final string after all such duplicate removals have been made. It is guaranteed the answer is unique.
+
+Input format:
+
+The input consists of a string str of lowercase English letters.
+
+Example Input: abbaca
+
+Output format:
+
+The output prints the final string after all duplicate removals have been made.
+
+A
+
+Example output: ca
+
+Explanation:
+
+The input string is "abbaca", the repeated removals result in "ca", as follows:
+
+Remove "bb" to get "aaca"
+
+Remove "aa" to get "ca"
+
+Code constraints:
+
+The length of str is at most 10^5
+
+Input1:- aabbaca 
+Output1 :- ca
