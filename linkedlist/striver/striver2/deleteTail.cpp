@@ -62,8 +62,7 @@ int main(){
     arr.push_back(6);
 
     Node* head = convertArr2LL(arr);
+    print(head);
     head=deleteTail(head);
     print(head);
-
-
 }
