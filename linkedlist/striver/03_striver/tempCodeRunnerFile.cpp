@@ -1,4 +1,3 @@
-    arr.push_back(2);
-    arr.push_back(3);
-    arr.push_back(4);
-    arr.push_back(5);
+    cout<<"currently tail:- "<<tail->data<<endl;
+    cout<<"before tail:- "<<tail->back->data<<endl;
+    cout<<"after tail:- "<<tail->next->data<<endl;
