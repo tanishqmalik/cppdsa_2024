@@ -46,7 +46,6 @@ Node* deletehead(Node* head){
     head=head->next;
     delete temp;
     return head;
-
 }
 
 
