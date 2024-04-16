@@ -18,30 +18,29 @@ class Node{
 };
 
 
-int heightofBT1(Node* root){
+
+int heightofBT(Node* root){
     if(root==nullptr){
         return 0;
     }
+    int right = heightofBT(root->right);
+    int left=heightofBT(root->left);
 
-    int left=heightofBT1(root->left)+1;
-    return left;
-}
-
-
-int heightofBT2(Node* root){
-    if(root==nullptr){
-        return 0;
-    }
-    int right = heightofBT2(root->right)+1;
-
-    return right;
+    return max(left, right)+1;
 }
 
 int diameterOfBinaryTree(Node* root){
-    int h_one= heightofBT1(root->left);
-    int h_two = heightofBT2(root->right);
+    if(root==nullptr){
+        return 0;
+    }
 
-    return h_one+h_two;
+    int opt1 = diameterOfBinaryTree(root->left);
+    int opt2 = diameterOfBinaryTree(root->right);
+    int opt3= heightofBT(root->left)+ heightofBT(root->right)+1;
+
+    return max(opt3, max(opt2, opt1));
+
+    
 }
 
 
