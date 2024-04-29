@@ -55,3 +55,10 @@
 //         cout<<mpp[ch-'a']<<endl;
 //     }
 // }
+
+// map time complexity - o(logn)
+// unordered map time complexity - o(1) best and average case , o(n) worst case
+
+
+
+
