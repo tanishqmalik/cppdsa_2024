@@ -32,36 +32,50 @@ Node* buildTree(){
 }
 
 
-void level_o(Node* root){
-    queue<Node*>q; 
-    q.push(root);
+// void level_o(Node* root){
+//     queue<Node*>q; 
+//     q.push(root);
 
-    while(!q.empty()){
-        Node* temp= q.front();
+//     while(!q.empty()){
+//         Node* temp= q.front();
 
-        q.pop();
+//         q.pop();
 
-        cout<<temp->data<<" ";
+//         cout<<temp->data<<" ";
 
-        if(temp->left){
-            q.push(temp->left);
-        }
+//         if(temp->left){
+//             q.push(temp->left);
+//         }
 
-        if(temp->right){
-            q.push(temp->right);
-        }
-    }
-}
+//         if(temp->right){
+//             q.push(temp->right);
+//         }
+//     }
+// }
+
+// int heightofTree(Node* root){
+//     if(root==NULL){
+//         return 0;
+//     }
+
+//     int heightofleft = heightofTree(root->left);
+//     int heightofright= heightofTree(root->right);
+
+//     int ans = 1+ max(heightofleft, heightofright);
+
+//     return ans;
+// }
+
 
 int heightofTree(Node* root){
     if(root==NULL){
         return 0;
     }
 
-    int heightofleft = heightofTree(root->left);
-    int heightofright= heightofTree(root->right);
+    int hL= heightofTree(root->left);
+    int rL= heightofTree(root->right);
 
-    int ans = 1+ max(heightofleft, heightofright);
+    int ans= 1 + max(hL,rL);
 
     return ans;
 }
@@ -70,7 +84,7 @@ int main(){
     Node* root= NULL;
     root=buildTree();
 
-    level_o(root);
+    // level_o(root);
 
     cout<<endl;
     cout<<"heightOftree"<<endl;
