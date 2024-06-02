@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "lldb",
+      "request": "launch",
+      "args": [],
+      "cwd": "/Users/tanishqmalik/Library/CloudStorage/GoogleDrive-tanishqvideo@gmail.com/My Drive/codes cloud/end-term-practice",
+      "program": "/Users/tanishqmalik/Library/CloudStorage/GoogleDrive-tanishqvideo@gmail.com/My Drive/codes cloud/end-term-practice/build/Debug/outDebug"
+    }
+  ]
+}

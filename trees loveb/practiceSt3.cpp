@@ -31,25 +31,25 @@ Node* buildTree(){
     return root;
 }
 
-void level_o(Node* root){
-    queue<Node*> q;
-    q.push(root);
+// void level_o(Node* root){
+//     queue<Node*> q;
+//     q.push(root);
 
-    while(!q.empty()){
-        Node* temp = q.front();
-        q.pop();
+//     while(!q.empty()){
+//         Node* temp = q.front();
+//         q.pop();
 
-        cout<<temp->data<<" ";
+//         cout<<temp->data<<" ";
 
-        if(temp->left){
-            q.push(temp->left);
-        }
+//         if(temp->left){
+//             q.push(temp->left);
+//         }
 
-        if(temp->right){
-            q.push(temp->right);
-        }
-    }
-}
+//         if(temp->right){
+//             q.push(temp->right);
+//         }
+//     }
+// }
 
 void preorder(Node* root){
     if(root==NULL){
@@ -66,9 +66,9 @@ int main(){
     Node* root=NULL;
     root=buildTree();
 
-    cout<<"level_o"<<endl;
-    level_o(root);
-    cout<<endl;
+    // cout<<"level_o"<<endl;
+    // level_o(root);
+    // cout<<endl;
 
     preorder(root);
 }
